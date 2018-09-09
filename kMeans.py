@@ -35,7 +35,7 @@ class kMeans:
         print("n:",self.n)
         print("d:",self.d)
 
-    def weights(self,data):
+    def setWeights(self,data):
         for i in range (0,self.k):
             # for now the weights are set as 1
             self.weights[i]=1
