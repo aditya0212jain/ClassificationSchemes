@@ -152,7 +152,12 @@ K-Nearest Neighbour is the second unsupervised algorithm that was implemented.In
 \end{figure}
 So as the k increases the error is increasing because of less distinction between the boundaries of the different classes. Because of the continuous nature of the feature vector we used euclidean distance as the measure. The error \% of k-NN was very less than the one from k-Means e.g. for k = 3 error was 6.2\% only. 
 \subsection{Train Data}
-
+\begin{figure}[htbp]
+\centerline{\includegraphics{knnrailways.PNG}}
+% \caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+With or without considering case ID parameter, the error lies in the range of 40-70 \% for normal and weighted classification under all type of distances but if we do normalization of data, we see a rapid decrease in error as k increases but not same for hamming distances and observe that error becomes stagnant after k=50.
 \subsection{Fashion MNIST}
 \begin{table}[htbp]
 \begin{center}
