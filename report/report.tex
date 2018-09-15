@@ -101,7 +101,12 @@ Instead of initializing the centroids randomly from the data if we choose them w
 \end{table}
 K-Means does not provide any benefit in this case as the sample is quite small already. Also the convergence was attained in around maximum 42 iterations in both cases. Since there were only 3 dimension feature vector PCA was not required. Euclidean distance was used as the measure of distance.
 \subsection{Railway Booking}
-
+\begin{figure}[htbp]
+\centerline{\includegraphics{Capture.PNG}}
+% \caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+Although having small data, we come to see that after around 900 iterations, it still not converges but error jumps in the range of 20-40 \% for both normalized data and randomized data. We don't use data in given form as fare will dominate the classifier results. From randomized data, we mean to say that we use euclidean distance for normalized fare data while hamming for remaining data in given form. While Scikit gives error percentage of 22 and 45 for normalized and randomized data.
 \subsection{Fashion MNIST}
 Doing classification without PCA is not feasible in this case so we tried different values of m(the reduced dimension).
 \begin{table}[htbp]
